@@ -1,0 +1,25 @@
+{
+    "name": "node-express-mongoose-boilerplate",
+    "version": "1.0.0",
+    "description": "node.js app for building production-ready RESTful APIs using Express + mongoose",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/",
+        "start": "node src/"
+    },
+    "keywords": [
+        "node",
+        "express",
+        "mongodb",
+        "mongoose"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.3",
+        "mongoose": "^6.2.4"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
