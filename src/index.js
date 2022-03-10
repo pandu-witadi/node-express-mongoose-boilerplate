@@ -11,7 +11,9 @@ let server
 mongoose.connect(CF.mongoose.url + CF.mongoose.dbname, CF.mongoose.options)
     .then(() => {
         console.log('... db connect to ' + CF.mongoose.url + CF.mongoose.dbname)
-        server = app.listen(CF.server.port, () => {
+
+        let port = process.env.PORT || CF.server.port
+        server = app.listen(port, () => {
             console.log(`${CF.app.name} server started - listening to port ${CF.server.port}`)
     })
 })
